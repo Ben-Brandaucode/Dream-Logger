@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BFC6ACDD257EE4A200C14312 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC6ACDC257EE4A200C14312 /* AppDelegate.swift */; };
+		BFC6ACDF257EE4A200C14312 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC6ACDE257EE4A200C14312 /* SceneDelegate.swift */; };
+		BFC6ACE1257EE4A200C14312 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC6ACE0257EE4A200C14312 /* ViewController.swift */; };
+		BFC6ACE4257EE4A200C14312 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFC6ACE2257EE4A200C14312 /* Main.storyboard */; };
+		BFC6ACE6257EE4A400C14312 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFC6ACE5257EE4A400C14312 /* Assets.xcassets */; };
+		BFC6ACE9257EE4A400C14312 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFC6ACE7257EE4A400C14312 /* LaunchScreen.storyboard */; };
+		BFC6ACF2257EE68100C14312 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFC6ACF1257EE68100C14312 /* GoogleService-Info.plist */; };
+		DF43629A7238240940476F0C /* Pods_dreamLoggerFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B866C05ACB362905462300 /* Pods_dreamLoggerFirebase.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		850A5E410AF9EEBA86EE1219 /* Pods-dreamLoggerFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dreamLoggerFirebase.release.xcconfig"; path = "Target Support Files/Pods-dreamLoggerFirebase/Pods-dreamLoggerFirebase.release.xcconfig"; sourceTree = "<group>"; };
+		B7C10E2E2782C7FCF26BE8A8 /* Pods-dreamLoggerFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dreamLoggerFirebase.debug.xcconfig"; path = "Target Support Files/Pods-dreamLoggerFirebase/Pods-dreamLoggerFirebase.debug.xcconfig"; sourceTree = "<group>"; };
+		BFC6ACD9257EE4A200C14312 /* dreamLoggerFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dreamLoggerFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFC6ACDC257EE4A200C14312 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BFC6ACDE257EE4A200C14312 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BFC6ACE0257EE4A200C14312 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BFC6ACE3257EE4A200C14312 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BFC6ACE5257EE4A400C14312 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BFC6ACE8257EE4A400C14312 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BFC6ACEA257EE4A400C14312 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFC6ACF1257EE68100C14312 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F1B866C05ACB362905462300 /* Pods_dreamLoggerFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dreamLoggerFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFC6ACD6257EE4A200C14312 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF43629A7238240940476F0C /* Pods_dreamLoggerFirebase.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03DD130B5DA8A5011D18DB7E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B7C10E2E2782C7FCF26BE8A8 /* Pods-dreamLoggerFirebase.debug.xcconfig */,
+				850A5E410AF9EEBA86EE1219 /* Pods-dreamLoggerFirebase.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		38BC2DB8920D9F6C4D214097 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1B866C05ACB362905462300 /* Pods_dreamLoggerFirebase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BFC6ACD0257EE4A200C14312 = {
+			isa = PBXGroup;
+			children = (
+				BFC6ACDB257EE4A200C14312 /* dreamLoggerFirebase */,
+				BFC6ACDA257EE4A200C14312 /* Products */,
+				03DD130B5DA8A5011D18DB7E /* Pods */,
+				38BC2DB8920D9F6C4D214097 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BFC6ACDA257EE4A200C14312 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFC6ACD9257EE4A200C14312 /* dreamLoggerFirebase.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFC6ACDB257EE4A200C14312 /* dreamLoggerFirebase */ = {
+			isa = PBXGroup;
+			children = (
+				BFC6ACDC257EE4A200C14312 /* AppDelegate.swift */,
+				BFC6ACDE257EE4A200C14312 /* SceneDelegate.swift */,
+				BFC6ACE0257EE4A200C14312 /* ViewController.swift */,
+				BFC6ACE2257EE4A200C14312 /* Main.storyboard */,
+				BFC6ACE5257EE4A400C14312 /* Assets.xcassets */,
+				BFC6ACE7257EE4A400C14312 /* LaunchScreen.storyboard */,
+				BFC6ACEA257EE4A400C14312 /* Info.plist */,
+				BFC6ACF1257EE68100C14312 /* GoogleService-Info.plist */,
+			);
+			path = dreamLoggerFirebase;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFC6ACD8257EE4A200C14312 /* dreamLoggerFirebase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFC6ACED257EE4A400C14312 /* Build configuration list for PBXNativeTarget "dreamLoggerFirebase" */;
+			buildPhases = (
+				B3B7F3E76753ADEE70EB027B /* [CP] Check Pods Manifest.lock */,
+				BFC6ACD5257EE4A200C14312 /* Sources */,
+				BFC6ACD6257EE4A200C14312 /* Frameworks */,
+				BFC6ACD7257EE4A200C14312 /* Resources */,
+				654EFF1464688147D46A75E9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = dreamLoggerFirebase;
+			productName = dreamLoggerFirebase;
+			productReference = BFC6ACD9257EE4A200C14312 /* dreamLoggerFirebase.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFC6ACD1257EE4A200C14312 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					BFC6ACD8257EE4A200C14312 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = BFC6ACD4257EE4A200C14312 /* Build configuration list for PBXProject "dreamLoggerFirebase" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BFC6ACD0257EE4A200C14312;
+			productRefGroup = BFC6ACDA257EE4A200C14312 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFC6ACD8257EE4A200C14312 /* dreamLoggerFirebase */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFC6ACD7257EE4A200C14312 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFC6ACE9257EE4A400C14312 /* LaunchScreen.storyboard in Resources */,
+				BFC6ACF2257EE68100C14312 /* GoogleService-Info.plist in Resources */,
+				BFC6ACE6257EE4A400C14312 /* Assets.xcassets in Resources */,
+				BFC6ACE4257EE4A200C14312 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		654EFF1464688147D46A75E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dreamLoggerFirebase/Pods-dreamLoggerFirebase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-dreamLoggerFirebase/Pods-dreamLoggerFirebase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-dreamLoggerFirebase/Pods-dreamLoggerFirebase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3B7F3E76753ADEE70EB027B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-dreamLoggerFirebase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFC6ACD5257EE4A200C14312 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFC6ACE1257EE4A200C14312 /* ViewController.swift in Sources */,
+				BFC6ACDD257EE4A200C14312 /* AppDelegate.swift in Sources */,
+				BFC6ACDF257EE4A200C14312 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BFC6ACE2257EE4A200C14312 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFC6ACE3257EE4A200C14312 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BFC6ACE7257EE4A400C14312 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFC6ACE8257EE4A400C14312 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BFC6ACEB257EE4A400C14312 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BFC6ACEC257EE4A400C14312 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BFC6ACEE257EE4A400C14312 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7C10E2E2782C7FCF26BE8A8 /* Pods-dreamLoggerFirebase.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73V52F7L32;
+				INFOPLIST_FILE = dreamLoggerFirebase/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Brandau.dreamLoggerFirebase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BFC6ACEF257EE4A400C14312 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 850A5E410AF9EEBA86EE1219 /* Pods-dreamLoggerFirebase.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73V52F7L32;
+				INFOPLIST_FILE = dreamLoggerFirebase/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Brandau.dreamLoggerFirebase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFC6ACD4257EE4A200C14312 /* Build configuration list for PBXProject "dreamLoggerFirebase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFC6ACEB257EE4A400C14312 /* Debug */,
+				BFC6ACEC257EE4A400C14312 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFC6ACED257EE4A400C14312 /* Build configuration list for PBXNativeTarget "dreamLoggerFirebase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFC6ACEE257EE4A400C14312 /* Debug */,
+				BFC6ACEF257EE4A400C14312 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFC6ACD1257EE4A200C14312 /* Project object */;
+}

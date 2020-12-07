@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>74498815593-con88tkqbk01ehq18bunl9qrj84mi38s.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.74498815593-con88tkqbk01ehq18bunl9qrj84mi38s</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCfefRrJA9AcKO14Lu_9H7ie_CHRgvnbaw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>74498815593</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.Brandau.dreamLoggerFirebase</string>
+	<key>PROJECT_ID</key>
+	<string>dreamlogger-3ff52</string>
+	<key>STORAGE_BUCKET</key>
+	<string>dreamlogger-3ff52.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:74498815593:ios:b1155dbe50c5c21c3414f8</string>
+</dict>
+</plist>
