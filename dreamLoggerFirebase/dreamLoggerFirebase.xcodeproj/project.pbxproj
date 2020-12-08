@@ -3,17 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		BFC6ACDD257EE4A200C14312 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC6ACDC257EE4A200C14312 /* AppDelegate.swift */; };
 		BFC6ACDF257EE4A200C14312 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC6ACDE257EE4A200C14312 /* SceneDelegate.swift */; };
-		BFC6ACE1257EE4A200C14312 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC6ACE0257EE4A200C14312 /* ViewController.swift */; };
+		BFC6ACE1257EE4A200C14312 /* mainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC6ACE0257EE4A200C14312 /* mainVC.swift */; };
 		BFC6ACE4257EE4A200C14312 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFC6ACE2257EE4A200C14312 /* Main.storyboard */; };
 		BFC6ACE6257EE4A400C14312 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFC6ACE5257EE4A400C14312 /* Assets.xcassets */; };
 		BFC6ACE9257EE4A400C14312 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFC6ACE7257EE4A400C14312 /* LaunchScreen.storyboard */; };
 		BFC6ACF2257EE68100C14312 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFC6ACF1257EE68100C14312 /* GoogleService-Info.plist */; };
+		BFC6AD09257EF2E600C14312 /* AddThoughtVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC6AD08257EF2E600C14312 /* AddThoughtVC.swift */; };
 		DF43629A7238240940476F0C /* Pods_dreamLoggerFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B866C05ACB362905462300 /* Pods_dreamLoggerFirebase.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,12 +24,13 @@
 		BFC6ACD9257EE4A200C14312 /* dreamLoggerFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dreamLoggerFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC6ACDC257EE4A200C14312 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFC6ACDE257EE4A200C14312 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BFC6ACE0257EE4A200C14312 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BFC6ACE0257EE4A200C14312 /* mainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainVC.swift; sourceTree = "<group>"; };
 		BFC6ACE3257EE4A200C14312 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BFC6ACE5257EE4A400C14312 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFC6ACE8257EE4A400C14312 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFC6ACEA257EE4A400C14312 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFC6ACF1257EE68100C14312 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BFC6AD08257EF2E600C14312 /* AddThoughtVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddThoughtVC.swift; sourceTree = "<group>"; };
 		F1B866C05ACB362905462300 /* Pods_dreamLoggerFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dreamLoggerFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -50,7 +52,6 @@
 				B7C10E2E2782C7FCF26BE8A8 /* Pods-dreamLoggerFirebase.debug.xcconfig */,
 				850A5E410AF9EEBA86EE1219 /* Pods-dreamLoggerFirebase.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -83,9 +84,11 @@
 		BFC6ACDB257EE4A200C14312 /* dreamLoggerFirebase */ = {
 			isa = PBXGroup;
 			children = (
+				BFC6AD0D257EF32500C14312 /* Model */,
+				BFC6AD0C257EF31D00C14312 /* View */,
+				BFC6AD0B257EF2EF00C14312 /* Controller */,
 				BFC6ACDC257EE4A200C14312 /* AppDelegate.swift */,
 				BFC6ACDE257EE4A200C14312 /* SceneDelegate.swift */,
-				BFC6ACE0257EE4A200C14312 /* ViewController.swift */,
 				BFC6ACE2257EE4A200C14312 /* Main.storyboard */,
 				BFC6ACE5257EE4A400C14312 /* Assets.xcassets */,
 				BFC6ACE7257EE4A400C14312 /* LaunchScreen.storyboard */,
@@ -93,6 +96,29 @@
 				BFC6ACF1257EE68100C14312 /* GoogleService-Info.plist */,
 			);
 			path = dreamLoggerFirebase;
+			sourceTree = "<group>";
+		};
+		BFC6AD0B257EF2EF00C14312 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BFC6ACE0257EE4A200C14312 /* mainVC.swift */,
+				BFC6AD08257EF2E600C14312 /* AddThoughtVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BFC6AD0C257EF31D00C14312 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BFC6AD0D257EF32500C14312 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,8 +236,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFC6ACE1257EE4A200C14312 /* ViewController.swift in Sources */,
+				BFC6ACE1257EE4A200C14312 /* mainVC.swift in Sources */,
 				BFC6ACDD257EE4A200C14312 /* AppDelegate.swift in Sources */,
+				BFC6AD09257EF2E600C14312 /* AddThoughtVC.swift in Sources */,
 				BFC6ACDF257EE4A200C14312 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

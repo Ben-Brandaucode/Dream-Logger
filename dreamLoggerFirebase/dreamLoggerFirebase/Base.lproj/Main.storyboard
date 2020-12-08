@@ -1,24 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2cP-KS-5zJ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Dream Logs-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="mainVC" customModule="dreamLoggerFirebase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Dream Logs" id="dKx-jL-l0L">
+                        <barButtonItem key="rightBarButtonItem" image="cloud" catalog="system" id="wtd-Ju-Ktv">
+                            <connections>
+                                <segue destination="TLf-rA-McW" kind="show" id="TOn-EF-42c"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="79.6875"/>
+        </scene>
+        <!--Add ThoughtVC-->
+        <scene sceneID="9Lm-EO-ksH">
+            <objects>
+                <viewController id="TLf-rA-McW" customClass="AddThoughtVC" customModule="dreamLoggerFirebase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BYv-xy-Sd3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5pY-yq-SYz">
+                                <rect key="frame" x="20" y="104" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="EaG-GJ-PLE"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Funny"/>
+                                    <segment title="Serious"/>
+                                    <segment title="Crazy"/>
+                                </segments>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <connections>
+                                    <action selector="categoryChanged:" destination="TLf-rA-McW" eventType="valueChanged" id="pr3-cx-bHF"/>
+                                </connections>
+                            </segmentedControl>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="UserName" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="gsz-q1-UcL">
+                                <rect key="frame" x="20" y="149" width="374" height="18"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="xt8-8B-XX4"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Thought Text" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cWG-GZ-WBs">
+                                <rect key="frame" x="20" y="179" width="374" height="100"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="LYS-dG-lqI"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgC-Td-q9t">
+                                <rect key="frame" x="177" y="287" width="60" height="35"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="5xh-TY-Haj"/>
+                                    <constraint firstAttribute="width" constant="60" id="vPp-o9-fYb"/>
+                                </constraints>
+                                <state key="normal" title="Post">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="postBtnTapped:" destination="TLf-rA-McW" eventType="touchUpInside" id="f6l-Up-gYL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="W80-HN-NEf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gsz-q1-UcL" firstAttribute="leading" secondItem="W80-HN-NEf" secondAttribute="leading" constant="20" id="0oe-hm-iAq"/>
+                            <constraint firstItem="tgC-Td-q9t" firstAttribute="centerX" secondItem="BYv-xy-Sd3" secondAttribute="centerX" id="0sr-xM-8DJ"/>
+                            <constraint firstItem="W80-HN-NEf" firstAttribute="trailing" secondItem="5pY-yq-SYz" secondAttribute="trailing" constant="20" id="FIK-of-Pla"/>
+                            <constraint firstItem="cWG-GZ-WBs" firstAttribute="top" secondItem="gsz-q1-UcL" secondAttribute="bottom" constant="12" id="Npv-sw-rRQ"/>
+                            <constraint firstItem="5pY-yq-SYz" firstAttribute="leading" secondItem="W80-HN-NEf" secondAttribute="leading" constant="20" id="OjO-o5-hMb"/>
+                            <constraint firstItem="W80-HN-NEf" firstAttribute="trailing" secondItem="gsz-q1-UcL" secondAttribute="trailing" constant="20" id="Uko-tB-U9o"/>
+                            <constraint firstItem="W80-HN-NEf" firstAttribute="trailing" secondItem="cWG-GZ-WBs" secondAttribute="trailing" constant="20" id="Xff-EV-Vg7"/>
+                            <constraint firstItem="gsz-q1-UcL" firstAttribute="top" secondItem="5pY-yq-SYz" secondAttribute="bottom" constant="12" id="dr8-Ut-dya"/>
+                            <constraint firstItem="tgC-Td-q9t" firstAttribute="top" secondItem="cWG-GZ-WBs" secondAttribute="bottom" constant="8" id="f8K-ay-cDe"/>
+                            <constraint firstItem="cWG-GZ-WBs" firstAttribute="leading" secondItem="W80-HN-NEf" secondAttribute="leading" constant="20" id="qNp-O8-Ri6"/>
+                            <constraint firstItem="5pY-yq-SYz" firstAttribute="top" secondItem="W80-HN-NEf" secondAttribute="top" constant="16" id="sw8-2X-ZTs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uys-ZL-7ch"/>
+                    <connections>
+                        <outlet property="categorySegment" destination="5pY-yq-SYz" id="WVQ-dn-286"/>
+                        <outlet property="postBtn" destination="tgC-Td-q9t" id="LCj-Zt-fYb"/>
+                        <outlet property="thoughtTxt" destination="cWG-GZ-WBs" id="5YC-Gm-7m1"/>
+                        <outlet property="usernameTxt" destination="gsz-q1-UcL" id="lqR-wB-sYl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ie-GZ-jZu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1738" y="69"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5GN-eX-L1O">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2cP-KS-5zJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="o5V-uE-qyl">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" systemColor="systemOrangeColor"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="uuZ-G4-YWk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zy7-uW-pNe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="79.6875"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cloud" catalog="system" width="128" height="87"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
