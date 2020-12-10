@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF7C7BC125805CA700164556 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7C7BC025805CA700164556 /* Constants.swift */; };
 		BFC6ACDD257EE4A200C14312 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC6ACDC257EE4A200C14312 /* AppDelegate.swift */; };
 		BFC6ACDF257EE4A200C14312 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC6ACDE257EE4A200C14312 /* SceneDelegate.swift */; };
 		BFC6ACE1257EE4A200C14312 /* mainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC6ACE0257EE4A200C14312 /* mainVC.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		850A5E410AF9EEBA86EE1219 /* Pods-dreamLoggerFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dreamLoggerFirebase.release.xcconfig"; path = "Target Support Files/Pods-dreamLoggerFirebase/Pods-dreamLoggerFirebase.release.xcconfig"; sourceTree = "<group>"; };
 		B7C10E2E2782C7FCF26BE8A8 /* Pods-dreamLoggerFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dreamLoggerFirebase.debug.xcconfig"; path = "Target Support Files/Pods-dreamLoggerFirebase/Pods-dreamLoggerFirebase.debug.xcconfig"; sourceTree = "<group>"; };
+		BF7C7BC025805CA700164556 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BFC6ACD9257EE4A200C14312 /* dreamLoggerFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dreamLoggerFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC6ACDC257EE4A200C14312 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFC6ACDE257EE4A200C14312 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BF7C7BBF25805C8A00164556 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BF7C7BC025805CA700164556 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		BFC6ACD0257EE4A200C14312 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +94,7 @@
 		BFC6ACDB257EE4A200C14312 /* dreamLoggerFirebase */ = {
 			isa = PBXGroup;
 			children = (
+				BF7C7BBF25805C8A00164556 /* Utilities */,
 				BFC6AD0D257EF32500C14312 /* Model */,
 				BFC6AD0C257EF31D00C14312 /* View */,
 				BFC6AD0B257EF2EF00C14312 /* Controller */,
@@ -236,6 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF7C7BC125805CA700164556 /* Constants.swift in Sources */,
 				BFC6ACE1257EE4A200C14312 /* mainVC.swift in Sources */,
 				BFC6ACDD257EE4A200C14312 /* AppDelegate.swift in Sources */,
 				BFC6AD09257EF2E600C14312 /* AddThoughtVC.swift in Sources */,

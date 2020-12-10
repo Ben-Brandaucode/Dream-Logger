@@ -7,10 +7,24 @@
 
 import UIKit
 
-class mainVC: UIViewController {
+enum ThoughtCategory: String{
+case serious = "serious"
+case funny = "funny"
+case crazy = "crazy"
+case popular = "popular"
+}
 
+class mainVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
+
+    @IBOutlet weak var segmentControll: UISegmentedControl!
+    @IBOutlet weak var tabelView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.delgate = self
+        tableView.dataSource = self
+        
+        
         // Do any additional setup after loading the view.
     }
 
